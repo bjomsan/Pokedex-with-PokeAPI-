@@ -1,0 +1,312 @@
+{
+    "1": [
+        "bulbasaur",
+        "ivysaur",
+        "venusaur"
+    ],
+    "2": [
+        "charmander",
+        "charmeleon",
+        "charizard"
+    ],
+    "3": [
+        "squirtle",
+        "wartortle",
+        "blastoise"
+    ],
+    "4": [
+        "caterpie",
+        "metapod",
+        "butterfree"
+    ],
+    "5": [
+        "weedle",
+        "kakuna",
+        "beedrill"
+    ],
+    "6": [
+        "pidgey",
+        "pidgeotto",
+        "pidgeot"
+    ],
+    "7": [
+        "rattata",
+        "raticate"
+    ],
+    "8": [
+        "spearow",
+        "fearow"
+    ],
+    "9": [
+        "ekans",
+        "arbok"
+    ],
+    "10": [
+        "pichu",
+        "pikachu",
+        "raichu"
+    ],
+    "11": [
+        "sandshrew",
+        "sandslash"
+    ],
+    "12": [
+        "nidoran-f",
+        "nidorina",
+        "nidoqueen"
+    ],
+    "13": [
+        "nidoran-m",
+        "nidorino",
+        "nidoking"
+    ],
+    "14": [
+        "cleffa",
+        "clefairy",
+        "clefable"
+    ],
+    "15": [
+        "vulpix",
+        "ninetales"
+    ],
+    "16": [
+        "igglybuff",
+        "jigglypuff",
+        "wigglytuff"
+    ],
+    "17": [
+        "zubat",
+        "golbat",
+        "crobat"
+    ],
+    "18": [
+        "oddish",
+        "gloom",
+        "vileplume"
+    ],
+    "19": [
+        "paras",
+        "parasect"
+    ],
+    "20": [
+        "venonat",
+        "venomoth"
+    ],
+    "21": [
+        "diglett",
+        "dugtrio"
+    ],
+    "22": [
+        "meowth",
+        "persian"
+    ],
+    "23": [
+        "psyduck",
+        "golduck"
+    ],
+    "24": [
+        "mankey",
+        "primeape",
+        "annihilape"
+    ],
+    "25": [
+        "growlithe",
+        "arcanine"
+    ],
+    "26": [
+        "poliwag",
+        "poliwhirl",
+        "poliwrath"
+    ],
+    "27": [
+        "abra",
+        "kadabra",
+        "alakazam"
+    ],
+    "28": [
+        "machop",
+        "machoke",
+        "machamp"
+    ],
+    "29": [
+        "bellsprout",
+        "weepinbell",
+        "victreebel"
+    ],
+    "30": [
+        "tentacool",
+        "tentacruel"
+    ],
+    "31": [
+        "geodude",
+        "graveler",
+        "golem"
+    ],
+    "32": [
+        "ponyta",
+        "rapidash"
+    ],
+    "33": [
+        "slowpoke",
+        "slowbro"
+    ],
+    "34": [
+        "magnemite",
+        "magneton",
+        "magnezone"
+    ],
+    "35": [
+        "farfetchd",
+        "sirfetchd"
+    ],
+    "36": [
+        "doduo",
+        "dodrio"
+    ],
+    "37": [
+        "seel",
+        "dewgong"
+    ],
+    "38": [
+        "grimer",
+        "muk"
+    ],
+    "39": [
+        "shellder",
+        "cloyster"
+    ],
+    "40": [
+        "gastly",
+        "haunter",
+        "gengar"
+    ],
+    "41": [
+        "onix",
+        "steelix"
+    ],
+    "42": [
+        "drowzee",
+        "hypno"
+    ],
+    "43": [
+        "krabby",
+        "kingler"
+    ],
+    "44": [
+        "voltorb",
+        "electrode"
+    ],
+    "45": [
+        "exeggcute",
+        "exeggutor"
+    ],
+    "46": [
+        "cubone",
+        "marowak"
+    ],
+    "47": [
+        "hitmonlee",
+        "hitmonchan"
+    ],
+    "48": [
+        "lickitung",
+        "lickilicky"
+    ],
+    "49": [
+        "koffing",
+        "weezing"
+    ],
+    "50": [
+        "rhyhorn",
+        "rhydon",
+        "rhyperior"
+    ],
+    "51": [
+        "happiny",
+        "chansey",
+        "blissey"
+    ],
+    "52": [
+        "tangela",
+        "tangrowth"
+    ],
+    "53": "kangaskhan",
+    "54": [
+        "horsea",
+        "seadra",
+        "kingdra"
+    ],
+    "55": [
+        "goldeen",
+        "seaking"
+    ],
+    "56": [
+        "staryu",
+        "starmie"
+    ],
+    "57": [
+        "mime-jr",
+        "mr-mime",
+        "mr-rime"
+    ],
+    "58": [
+        "scyther",
+        "scizor"
+    ],
+    "59": [
+        "smoochum",
+        "jynx"
+    ],
+    "60": [
+        "elekid",
+        "electabuzz",
+        "electivire"
+    ],
+    "61": [
+        "magby",
+        "magmar",
+        "magmortar"
+    ],
+    "62": "pinsir",
+    "63": "tauros",
+    "64": [
+        "magikarp",
+        "gyarados"
+    ],
+    "65": "lapras",
+    "66": "ditto",
+    "67": [
+        "eevee",
+        "vaporeon",
+        "jolteon",
+        "flareon"
+    ],
+    "68": [
+        "porygon",
+        "porygon2",
+        "porygon-z"
+    ],
+    "69": [
+        "omanyte",
+        "omastar"
+    ],
+    "70": [
+        "kabuto",
+        "kabutops"
+    ],
+    "71": "aerodactyl",
+    "72": [
+        "munchlax",
+        "snorlax"
+    ],
+    "73": "articuno",
+    "74": "zapdos",
+    "75": "moltres",
+    "76": [
+        "dratini",
+        "dragonair",
+        "dragonite"
+    ],
+    "77": "mew",
+    "78": "mewtwo"
+}

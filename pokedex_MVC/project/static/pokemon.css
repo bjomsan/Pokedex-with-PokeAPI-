@@ -1,0 +1,91 @@
+/* #EE8329, #CD5241, #084152*/
+
+.pkm-name {
+    padding-top: 5em;
+}
+
+.main-img {
+    width: 400px;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #084152;
+    margin: 6em;
+  }
+  
+.stat-header,
+.stat-row {
+    display: flex;
+}
+  
+.cell {
+    flex: 1;
+    padding: 8px 16px;
+    border: 1px solid black;
+}
+  
+.stat-header {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.stat-row {
+    background-color: #084152;
+    color: #ddd;
+}
+
+  @media screen and (max-width: 768px) {
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+        margin: 3em;
+      }
+      
+      .stat-header,
+      .stat-row {
+        display: flex;
+      }
+      
+      .cell {
+        padding: 2px;
+        border: 1px solid black;
+      }
+      
+  }
+
+
+.evolution-header {
+    text-align: center;
+    font-size: 40px;
+}
+
+.evolution {
+    display: flex;
+    justify-content: center;
+}
+
+.evo-img {
+  width: 215px;
+  height: 215px;
+}
+
+.damage-taken {
+  margin-left: 2em;
+}
+
+.type-container {
+  display: flex;
+  gap: 10px;
+}
+
+.type-section {
+  margin: 0;
+}
+
+.type-section p {
+  width: 120px;
+  height: 25px;
+  font-size: 20px;
+}

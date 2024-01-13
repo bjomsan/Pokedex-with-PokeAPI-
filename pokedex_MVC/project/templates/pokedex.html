@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='common.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pokedex.css')}}">
+  </head>
+  <body>
+    <nav>
+      <h1><a href="{{ url_for('pokedex', username=username) }}">Pokedex</a></h1>
+        <form action="{{ url_for('pokedex_search', username=username, name=q) }}" method="GET">
+          <input type="text" name="q" placeholder="Search...">
+          <button type="submit">Search</button>
+          {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+          {% endif %}
+        </form>
+    </nav>
+    <main>
+      <h2>Welcome; {{ username }}!</h2>
+      <div class="pokemon-container">
+        {% for pkm in pokemons %}
+          <div class="pokemon">
+            <a href="{{ url_for('pokemon_page', username=username, name=pkm[1]) }}">
+              <img class="pkm-profile" src="{{ pkm[3]}}">
+            </a>
+            <div class="pkm-number-name">
+              <p class="list-number">{{ pkm[0] }}</p>
+              <p class="pkm-name">{{ pkm[1] | capitalize }}</p>
+            </div>
+            <div class="type-section">
+              {% for type in pkm[2] %}
+                <p class="type-icon-{{ type }}">{{ type | capitalize }}</p>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+  </main>
+  </body>
+</html>

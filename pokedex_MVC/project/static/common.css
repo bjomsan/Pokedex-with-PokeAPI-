@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'PokemonHollow';
+    src: url('PokemonHollow.ttf');
+}
+
+@font-face {
+    font-family: 'PokemonSolid';
+    src: url('PokemonSolid.ttf');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #3D3B40;
+}
+
+main {
+    margin-left: min(max(0em, 10vw), 20em);
+    margin-right: min(max(0em, 10vw), 20em);
+    background-color: #F8EDFF;
+}
+
+nav {
+    background-color: #222cbe;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+nav h1 {
+    font-family: 'PokemonSolid', sans-serif;
+    padding: 0;
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin: 0;
+    margin-bottom: 0.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+nav h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+form input, button{
+    border-radius: 5px;
+}
+
+form {
+    margin-top: 49px;
+}
+
+.type-section {
+    display: flex;
+    margin-left: 1em;
+    gap: 5px;
+}
+
+.type-section p {
+    width: 70px;
+    height: 18px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.type-icon-grass {
+    background-color: #9bcc50;
+    color: black;
+}
+
+.type-icon-poison {
+    background-color: #b97fc9;
+}
+
+.type-icon-fire {
+    background-color: #fd7d24;
+}
+
+.type-icon-flying {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    color: black;
+}
+
+.type-icon-water {
+    background-color: #4592c4;
+}
+
+.type-icon-rock {
+    background-color: #a38c21;
+}
+
+.type-icon-ground {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    color: black;
+}
+
+.type-icon-ice {
+    background-color: #51c4e7;
+    color: black;
+}
+
+.type-icon-normal {
+    background-color: #a4acaf;
+    color: black;
+}
+
+.type-icon-dragon {
+    background-color: #9bcc50;
+}
+
+.type-icon-electric {
+    background-color: #eed535;
+    color: black;
+}
+
+.type-icon-psychic {
+    background-color: #f366b9;
+}
+
+.type-icon-bug {
+    background-color: #729f3f;
+}
+
+.type-icon-fighting {
+    background-color: #d56723;
+}
+
+.type-icon-ghost {
+    background-color: #7b62a3;
+}
+
+.type-icon-steel {
+    background-color: #9eb7b8;
+    color: black;
+}
+
+.type-icon-fairy {
+    background-color: #fdb9e9;
+    color: black;
+}
+
+.type-icon-dark {
+    background-color: #707070;
+}
+

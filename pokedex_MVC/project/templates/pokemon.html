@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='common.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pokemon.css')}}">
+  </head>
+  <body>
+    <nav>
+        <h1><a href="{{ url_for('pokedex', username=username) }}">Pokedex</a></h1>
+        <form action="{{ url_for('pokemon_search', username=username, current=pkm[1], name=q) }}" method="GET">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+            {% if error_message %}
+                <p class="error-message">{{ error_message }}</p>
+            {% endif %}
+        </form>
+    </nav>
+    <main>
+        <div class="page-header">
+            <h2 class="pkm-name">{{ pkm[1] | capitalize}}</h2>
+            <h2>#{{ pkm[0] }}</h2>
+        </div>
+
+        <img class="main-img" src="{{ pkm[10] }}">
+
+        <div class="stats-container">
+            <div class="stat-header">
+                <div class="cell">HP</div>
+                <div class="cell">Attack</div>
+                <div class="cell">Defense</div>
+                <div class="cell">Sp. Attack</div>
+                <div class="cell">Sp. Defense</div>
+                <div class="cell">Speed</div>
+                <div class="cell">Total</div>
+            </div>
+            <div class="stat-row">
+                <div class="cell">{{ pkm[3] }}</div>
+                <div class="cell">{{ pkm[4] }}</div>
+                <div class="cell">{{ pkm[5] }}</div>
+                <div class="cell">{{ pkm[6] }}</div>
+                <div class="cell">{{ pkm[7] }}</div>
+                <div class="cell">{{ pkm[8] }}</div>
+                <div class="cell">{{ pkm[9] }}</div>
+            </div>
+        </div>
+
+        <div class="damage-taken">
+            {% if has_4x_damage %}
+                <div class="damage-group">
+                    <h2 class="4x">Takes 4x damage</h2>
+                    <div class="type-container">
+                        {% for key, val in pkm[12].items() %}
+                            {% if val == 4.0 %}
+                                <div class="type-section">
+                                    <p class="type-icon-{{ key }}">{{ key | capitalize }}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if has_2x_damage %}
+                <div class="damage-group">
+                    <h2 class="2x">Takes 2x damage</h2>
+                    <div class="type-container">
+                        {% for key, val in pkm[12].items() %}
+                            {% if val == 2.0 %}
+                                <div class="type-section">
+                                    <p class="type-icon-{{ key }}">{{ key | capitalize }}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if has_1x_damage %}
+                <div class="damage-group">
+                    <h2 class="1x">Takes 1x damage</h2>
+                    <div class="type-container">
+                        {% for key, val in pkm[12].items() %}
+                            {% if val == 1 %}
+                                <div class="type-section">
+                                    <p class="type-icon-{{ key }}">{{ key | capitalize }}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if has_05x_damage %}
+                <div class="damage-group">
+                    <h2 class="0.5x">Takes 0.5x damage</h2>
+                    <div class="type-container">
+                        {% for key, val in pkm[12].items() %}
+                            {% if val == 0.5 %}
+                                <div class="type-section">
+                                    <p class="type-icon-{{ key }}">{{ key | capitalize }}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if has_025x_damage %}
+                <div class="damage-group">
+                    <h2 class="0.25x">Takes 0.25x damage</h2>
+                    <div class="type-container">
+                        {% for key, val in pkm[12].items() %}
+                            {% if val == 0.25 %}
+                                <div class="type-section">
+                                    <p class="type-icon-{{ key }}">{{ key | capitalize }}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if has_0x_damage %}
+                <div class="damage-group">
+                    <h2 class="0x">Takes 0x damage</h2>
+                    <div class="type-container">
+                        {% for key, val in pkm[12].items() %}
+                            {% if val == 0 %}
+                                <div class="type-section">
+                                    <p class="type-icon-{{ key }}">{{ key | capitalize }}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        
+
+        <div class="evolution-container">
+            <h2 class="evolution-header">Evolutions</h2>
+            <div class="evolution">
+                {% for evo in pkm[11] %}
+                    <img class="evo-img" src="{{ evo[10] }}">
+                    <div class="evo-pkm-name">
+                        <p>{{ evo[1] }}</p>
+                        <p>#{{ evo[0] }}</p>
+                    </div>
+                    <div class="type-section">
+                        {% for type in evo[2] %}
+                            <p class="type-icon-{{ type }}">{{ type | capitalize }}</p>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

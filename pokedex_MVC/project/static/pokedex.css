@@ -1,0 +1,42 @@
+/* #EE8329, #CD5241, ##084152*/
+
+h2 {
+    padding-top: 5em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.pokemon {
+    margin: 1em;
+    width: 215px;
+}
+
+.pkm-profile {
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    width: 215px;
+    height: 215px;
+}
+
+.pkm-number-name p {
+    margin-left: 1em;
+    font-size: 20px;
+    color: black;
+}
+
+.pkm-name {
+    margin: 0;
+}
+
+.list-number {
+    margin: 0;
+}

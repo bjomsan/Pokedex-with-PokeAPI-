@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>home</title>
+  </head>
+  <body>
+    <h1>
+        Login to existing account
+    </h1>
+
+    <form method="post">
+      Username: <input name="username"/>
+      <br/><br/>
+      Password: <input type="password" name="password">
+      <br/><br/>
+      <button type="submit">Submit</button>
+      <br/><br/>
+    </form>
+
+    {% if error_message %}
+      <div class="error-message">{{ error_message }}</div>
+    {% endif %}
+
+
+    <h1>
+      Create new account
+    </h1>
+    <form method="post">
+      Username: <input name="new_username"/>
+      <br/><br/>
+      Password: <input type="password" name="new_password">
+      <br/><br/>
+      <button type="submit">Submit</button>
+      <br/><br/>
+    </form>
+
+    {% if new_error %}
+      <div class="new-error-message">{{ new_error }}</div>
+    {% endif %}
+
+  </body>
+</html>
