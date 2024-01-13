@@ -2,6 +2,11 @@
 !NB! work in progress
 
 I have used PokeAPI(https://pokeapi.co/) to create a Pokdex MVC with Flask. 
+The application contains:
+- **Login/register**: the first page requires the user to login to an existing account or create a new one.
+- **Pokedex**: The main pokedex. Overwies over all pokemons.
+- **Pokemon info**: Each pokemon has its own page with detailes info about stats/weaknesses/evolutions
+- **Search bar**: Both Pokedex- and Pokemon page has a searchbar were the user can search for a pokemon.
 
 ## Flders/Files
 
